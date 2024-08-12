@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Введите целое число a: ");
+        int a = input.nextInt();
+
+        System.out.print("Введите целое число b: ");
+        int b = input.nextInt();
+
+        if (a > b) {
+            System.out.println("a > b");
+        } else if (a < b) {
+            System.out.println("a < b");
+        } else {
+            System.out.println("a = b");
+        }
+
+        System.out.println("Сумма a + b: " + (a + b));
+        System.out.println("Разность a - b: " + (a - b));
+        
+        if (b != 0) {
+            System.out.println("Частное a / b: " + ((double) a / b));
+        } else {
+            System.out.println("На ноль делить нельзя");
+        }
+
+        System.out.println("Произведение a * b: " + (a * b));
+    }
+}
